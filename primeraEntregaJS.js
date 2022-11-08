@@ -13,12 +13,12 @@ continuacomprando = prompt("Desea comprar productos? Escriba 'si'");
 while (continuacomprando=="si"){
     producto = prompt("Escriba el prodcuto que desea comprar (barrendero, escoba, anden, pincel)");
 
-    if(producto=="barrendero"){                                            // agrega BARRENDEROS al carrito
+    if(producto==="barrendero"){                                            // agrega BARRENDEROS al carrito
         precio = 700;
         cantidad = Number(prompt("Ingrese la cantidad de barrenderos"));
         agregarcarrito(precio, cantidad);
         totalProductos = totalProductos + cantidad;                        
-    } else if (producto=="anden"){                                         // agrega ANDENES al carrito, segun la medida elegida
+    } else if (producto==="anden"){                                         // agrega ANDENES al carrito, segun la medida elegida
         let medida = Number(prompt("Ingrese la medida deseada del producto: 40, 60, 80 o 100 cm"));
         switch (medida){
             case 40:
@@ -39,12 +39,12 @@ while (continuacomprando=="si"){
         cantidad = Number(prompt("Ingrese la cantidad de anden de "+medida));
         agregarcarrito(precio, cantidad);
         totalProductos = totalProductos + cantidad;   
-    } else if(producto=="escoba"){                                      // agrega ESCOBAS al carrito
+    } else if(producto==="escoba"){                                      // agrega ESCOBAS al carrito
         precio = 450;
         cantidad = Number(prompt("Ingrese la cantidad de escobas"));
         agregarcarrito(precio, cantidad);
         totalProductos = totalProductos + cantidad;   
-    } else if(producto=="pincel"){                                    // agrega PINCELES al carrito
+    } else if(producto==="pincel"){                                    // agrega PINCELES al carrito
         precio = 150;
         cantidad = Number(prompt("Ingrese la cantidad de escobas"));
         agregarcarrito(precio, cantidad);
